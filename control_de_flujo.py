@@ -58,7 +58,7 @@ lista1 = [12, 15, 20, 27, 32, 39, 42, 48, 55, 66, 75, 82, 89, 91, 93, 105, 123, 
 
 multiplos3 = 0
 for el in lista1:
-  if el%3 == 0 and el < 300:
+  if el % 3 == 0 and el < 300:
     multiplos3 +=1
 
 """Guardar en `regresivo50` una lista con la cuenta regresiva desde el número 
@@ -107,8 +107,7 @@ otros números enteros.
 lista3 = list(range(37,300,1))
 primos = []
 for el in lista3:
-  
-
+  if el % 2 == 0
 
 """Guardar en `fibonacci` una lista con los primeros 60 términos de la serie de 
 Fibonacci.
