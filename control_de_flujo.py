@@ -2,8 +2,11 @@
 """Guarde en lista `naturales` los primeros 100 números naturales (desde el 1) 
 usando el bucle while
 """
-
-
+naturales = [1]
+i = 1
+while i < 100:
+  i += 1
+  naturales.append(i)
 
 
 """Guarde en `acumulado` una lista con el siguiente patrón:
@@ -13,14 +16,22 @@ usando el bucle while
 Hasta el número 50.
 """
 
-
-
+acumulado = ["1"]
+j = 1
+acum = str(j) 
+while j < 50:
+  j +=1
+  acum =  acum + " " + str(j)
+  acumulado.append(acum)
 
 """Guarde en `suma100` el entero de la suma de todos los números entre 1 y 100:
 """
 
-
-
+suma100 = 0
+k = 0
+while k < 100:
+  k+= 1
+  suma100 = suma100 + k
 
 
 
@@ -31,8 +42,12 @@ separados por coma, así:
 
 """
 
-
-
+tabla100 = "134"
+h = 2
+while h < 11: 
+  b = h * 134
+  tabla100 =tabla100  + "," + str(b)
+  h += 1
 
 
 """Guardar en `multiplos3` la cantidad de números que son múltiplos de 3 y 
@@ -41,9 +56,10 @@ está ordenada).
 """
 lista1 = [12, 15, 20, 27, 32, 39, 42, 48, 55, 66, 75, 82, 89, 91, 93, 105, 123, 132, 150, 180, 201, 203, 231, 250, 260, 267, 300, 304, 310, 312, 321, 326]
 
-
-
-
+multiplos3 = 0
+for el in lista1:
+  if el%3 == 0 and el < 300:
+    multiplos3 +=1
 
 """Guardar en `regresivo50` una lista con la cuenta regresiva desde el número 
 50 hasta el 1, así:
@@ -59,9 +75,18 @@ lista1 = [12, 15, 20, 27, 32, 39, 42, 48, 55, 66, 75, 82, 89, 91, 93, 105, 123, 
   '1'
 ]
 """
-
-
-
+regresivo50 =[]
+regresivo = list(range(50, 0, -1))
+j = 0
+acum = ""
+while j < 50:
+  for el in regresivo:
+    acum = acum + " " + str(el)
+  
+  regresivo.pop(0)
+  regresivo50.append(acum.strip())  
+  acum = ""
+  j +=1
 
 
 
@@ -69,9 +94,9 @@ lista1 = [12, 15, 20, 27, 32, 39, 42, 48, 55, 66, 75, 82, 89, 91, 93, 105, 123, 
 `invertido` (sin hacer uso de la función `reversed` ni del método `reverse`)
 """
 lista2 = list(range(1, 70, 5))
-
-
-
+invertido = []
+for el in lista2:
+  invertido.insert(0,el)
 
 
 """Guardar en `primos` una lista con todos los números primos desde el 37 al 300
@@ -79,8 +104,10 @@ Nota: Un número primo es un número entero que no se puede calcular multiplican
 otros números enteros.
 """
 
-
-
+lista3 = list(range(37,300,1))
+primos = []
+for el in lista3:
+  
 
 
 """Guardar en `fibonacci` una lista con los primeros 60 términos de la serie de 
