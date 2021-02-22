@@ -205,5 +205,14 @@ cantidad máxima de asteriscos de 30.
 """
 
 patron = ""
-
-
+p = 1
+pp = 30
+while p < 60:
+  if p < 31:
+    patron = patron + "*" * p + "\n"
+  else:
+    if pp != 0 : pp = pp - 1
+    patron = patron + "*"* pp + "\n"
+  p += 1
+patron = patron.rstrip()
+print(patron)
